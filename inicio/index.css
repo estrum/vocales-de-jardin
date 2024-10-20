@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("https://wallpaperaccess.com/full/2086740.jpg") no-repeat center center fixed;
+    background-size: cover; /* Ajusta el fondo a la pantalla */
+}
+
+/* Estilo para el título centrado */
+h1 {
+    text-align: center;   /* Centra el texto del título */
+    margin-bottom: 20px;  /* Agrega espacio debajo del título */
+    color: rgb(1, 0, 0);         /* Color del título */
+    font-size: 50px;      /* Tamaño de la fuente */
+    font-family: Arial, sans-serif; /* Fuente del título */
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    position: relative;
+}
+
+.btn {
+    padding: 20px;
+    color: black;  /* Color del texto */
+    font-size: 20px;  /* Tamaño del texto */
+    font-weight: bold;  /* Texto en negrita */
+    border: 2px solid black;  /* Borde negro */
+    border-radius: 5px;  /* Bordes ligeramente redondeados */
+    width: 80px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+/* Oscurecer el color de fondo al pasar el cursor */
+.btn:hover {
+    filter: brightness(85%); /* Oscurece el botón un 15% */
+    transform: scale(1.05); /* Hace un pequeño zoom al botón */
+}
+
+#btn1 {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: start;
+}
+
+#btn2 {
+    grid-column: 3;
+    grid-row: 1;
+    align-self: start;
+}
+
+#btn3 {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: center;
+    align-self: center;
+}
+
+#btn4 {
+    grid-column: 1;
+    grid-row: 3;
+    align-self: end;
+}
+
+#btn5 {
+    grid-column: 3;
+    grid-row: 3;
+    justify-self: end;
+    align-self: end;
+}
